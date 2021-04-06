@@ -47,6 +47,7 @@ const useGetCurrentUser = () => {
         .then((data) => setUser(data))
         .then(() => setLoading(false));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.isProfileOpen]);
 
   async function getCurrentUser() {

@@ -6,6 +6,7 @@ const useGetUsers = () => {
 
   useEffect(() => {
     getUsers().then((data) => dispatch({ type: "getUsers", payload: data }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.apiUrl]);
 
   async function getUsers() {
